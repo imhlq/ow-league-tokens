@@ -37,7 +37,9 @@ class Config:
     @staticmethod
     def get_default():
         return {
-            'accounts': {},
+            'accounts': {
+                "368469913": {'username': 'LostSoul', 'level': 10, 'platform': 'PC'},
+            },
             'earn_owl': True,
             'earn_owc': True
         }

@@ -165,8 +165,8 @@ def menu(args):
                     try:
                         users: list = json.loads(response_text)
                     except:
+                        users = None
                         print("Profile server are probably under maintenance!\nhttps://github.com/ucarno/ow-league-tokens/issues/7")
-                        exit(0)
 
                 if not users:
                     print(f'{COLOR_FAILURE}Users with that username not found.{COLOR_RESET}', end='\n\n')
